@@ -1,0 +1,53 @@
+{
+  "name": "sib-crypto",
+  "version": "0.2.1",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx sib-crypto.ts",
+    "build": "tsup"
+  },
+  "keywords": [
+    "node",
+    "crypto",
+    "typescript"
+  ],
+  "author": "qzlei <Tan_112024@163.com>",
+  "license": "ISC",
+  "description": "JavaScript library of crypto standards.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qz-lei/sib-crypto.git"
+  },
+  "homepage": "https://github.com/qz-lei/sib-crypto#readme",
+  "bugs": {
+    "url": "https://github.com/qz-lei/sib-crypto/issues"
+  },
+  "dependencies": {
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "prettier": "^3.4.2",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "dist/sib-crypto.cjs",
+  "module": "dist/sib-crypto.mjs",
+  "types": "dist/sib-crypto.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/sib-crypto.mjs",
+      "require": "./dist/sib-crypto.cjs"
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all"
+  }
+}
